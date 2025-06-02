@@ -2,7 +2,7 @@
 
 julia_version = "1.11.5"
 manifest_format = "2.0"
-project_hash = "1826901ebe82c93b3c3211410960bde68025df1c"
+project_hash = "e0b3e2349917279f7328230113c1d4df99a0e89e"
 
 [[deps.ANSIColoredPrinters]]
 git-tree-sha1 = "574baf8110975760d391c710b6341da1afa48d8c"
@@ -25,6 +25,14 @@ version = "1.11.0"
 [[deps.Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 version = "1.11.0"
+
+[[deps.BaseZz]]
+deps = ["Skipper"]
+git-tree-sha1 = "2aebc684e4e8f3adfd761c99a5e91715e8e479b7"
+repo-rev = "main"
+repo-url = "https://github.com/a-r-n-o-l-d/BaseZz.jl"
+uuid = "76171be9-0d6b-4c15-96ae-d6a41202f9dc"
+version = "0.1.0"
 
 [[deps.CodecZlib]]
 deps = ["TranscodingStreams", "Zlib_jll"]
@@ -143,9 +151,10 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 version = "1.11.0"
 
 [[deps.MapMaskZz]]
+deps = ["BaseZz"]
 path = ".."
 uuid = "ede75e6b-e38f-4655-aabe-54824c7f5bfe"
-version = "1.0.0-DEV"
+version = "0.1.0"
 
 [[deps.Markdown]]
 deps = ["Base64"]
@@ -247,6 +256,23 @@ version = "0.7.0"
 [[deps.Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
 version = "1.11.0"
+
+[[deps.Skipper]]
+git-tree-sha1 = "725fc552fd61f56990db3ab30903b94fd16d9182"
+uuid = "fc65d762-6112-4b1c-b428-ad0792653d81"
+version = "0.1.15"
+
+    [deps.Skipper.extensions]
+    AccessorsExt = "Accessors"
+    AxisKeysExt = "AxisKeys"
+    DictionariesExt = "Dictionaries"
+    MakieExt = "Makie"
+
+    [deps.Skipper.weakdeps]
+    Accessors = "7d9f7c33-5ae7-4f3b-8dc6-eff91059b697"
+    AxisKeys = "94b1ba4f-4ee9-5380-92f1-94cde586c3c5"
+    Dictionaries = "85a47980-9c8c-11e8-2b9f-f7ca1fa99fb4"
+    Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
 
 [[deps.Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
